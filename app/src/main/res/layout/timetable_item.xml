@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#CDC293">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/colorItemBackground">
+
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/default_type_of_lesson"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewTeacher"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:text="@string/default_description"
+            android:textColor="#5C6BC0"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelDescription" />
+
+        <TextView
+            android:id="@+id/textViewDayOfWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/default_day_of_week"
+            android:textColor="#29B6F6"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textViewLabelTime"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="@string/default_time"
+            android:textColor="#FF7043"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toEndOf="@+id/textViewDayOfWeek"
+            app:layout_constraintTop_toTopOf="@+id/textViewDayOfWeek" />
+
+        <TextView
+            android:id="@+id/textViewPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="@string/default_place"
+            android:textColor="#66BB6A"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textViewLabelPlace"
+            app:layout_constraintTop_toTopOf="@+id/textViewLabelPlace" />
+
+        <TextView
+            android:id="@+id/textViewTeacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:text="@string/default_name"
+            android:textColor="#EF5350"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/textViewLabelTeacher"
+            app:layout_constraintTop_toTopOf="@+id/textViewLabelTeacher" />
+
+        <TextView
+            android:id="@+id/textViewTeacherPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/default_position"
+            android:textColor="#AB47BC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textViewTeacherName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelTeacher" />
+
+        <ImageView
+            android:id="@+id/imageViewTeacher"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:contentDescription="@string/image_of_teacher_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/textViewLabelTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/label_teacher"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLabelPlace" />
+
+        <TextView
+            android:id="@+id/textViewLabelDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/label_description"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTeacherPosition" />
+
+        <TextView
+            android:id="@+id/textViewLabelPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/label_place"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDayOfWeek" />
+
+        <TextView
+            android:id="@+id/textViewLabelTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="@string/label_time"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
